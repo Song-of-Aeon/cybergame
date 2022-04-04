@@ -49,6 +49,9 @@ if txtprocessed {
 		
 	}
 	draw_set_font(otherfonts);
+	if drawchars >= talklength && advance {
+		draw_sprite_ext(s_null, 0, x+width/2-40, y+height-40, -5, 5, 0, c_white, 1);
+	}
 }
 
 //ds_map_add

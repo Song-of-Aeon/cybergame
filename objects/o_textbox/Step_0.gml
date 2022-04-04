@@ -43,13 +43,13 @@ if drawchars <= talklength {
     }
     message_draw = string_copy(msg[talkpos].text, 0, drawchars);
 } else { 
-    if select {
+    if select || !advance {
         if (talkpos < talksize-1) {
+			waited[waiting] = false;
 			talkpos++;
 			talklength = string_length(msg[talkpos].text);
 			drawing = "";
 			drawchars = 0;
-			name = msg[talkpos].name;
 			msg[talkpos].event();
 			if msg[talkpos].animation != noone {
 				o_whatever.girl = msg[talkpos].animation;

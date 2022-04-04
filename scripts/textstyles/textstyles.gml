@@ -1,21 +1,21 @@
-global.gw = 426;
-global.gh = 240;
+global.gw = 1280;
+global.gh = 720;
 
 
 global.textdefault = {
 	x: global.gw/4,
-	y: 7,
-	width: 200,
-	height: 70,
+	y: 21,
+	width: 600,
+	height: 210,
 	spriteposx: 210,
 	spriteposy: 190,
 }
 
 global.textthinking = {
 	x: global.gw/4,
-	y: 163,
-	width: 200,
-	height: 70,
+	y: 163*3,
+	width: 600,
+	height: 210,
 	spriteposx: 210,
 	spriteposy: 190,
 }

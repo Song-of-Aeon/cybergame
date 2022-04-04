@@ -59,6 +59,7 @@
     {"id":{"name":"c_generateshop","path":"scripts/c_generateshop/c_generateshop.yy",},"order":1,},
     {"id":{"name":"txt_testboss","path":"scripts/txt_testboss/txt_testboss.yy",},"order":3,},
     {"id":{"name":"collision_line_width","path":"scripts/collision_line_width/collision_line_width.yy",},"order":1,},
+    {"id":{"name":"c_dorage","path":"scripts/c_dorage/c_dorage.yy",},"order":45,},
     {"id":{"name":"MenuElementdiv","path":"scripts/MenuElementdiv/MenuElementdiv.yy",},"order":18,},
     {"id":{"name":"o_particlemanager","path":"objects/o_particlemanager/o_particlemanager.yy",},"order":11,},
     {"id":{"name":"instance_create","path":"scripts/instance_create/instance_create.yy",},"order":2,},
