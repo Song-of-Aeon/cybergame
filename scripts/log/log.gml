@@ -7,7 +7,6 @@ function log() {
 	var stack = debug_get_callstack(10);
 	//show_debug_message(stack);
 	show_debug_message(string(current_time) + " : " + string(stack[1]) + " : " + r);
-	var p = new consoleEntry(r,c_black);
 }
 /*
 var a = {};

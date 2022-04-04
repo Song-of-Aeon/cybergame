@@ -116,7 +116,7 @@ function surfaces_init(){
 
 		surface_resize(application_surface,gameSize.x*global.scale,gameSize.y*global.scale) //uncover this when doing real resolutions //i uncovered it thanks past bread man
 		camera_set_view_size(camera_get_active(),gameSize.x,gameSize.y);
-		window_set_size((640*global.scale)+(borderSize*2*global.scale),(360*global.scale)+(borderSize*2*global.scale));
+		//window_set_size((640*global.scale)+(borderSize*2*global.scale),(360*global.scale)+(borderSize*2*global.scale));
 		
 		threedee= surface_create(surface_get_width(application_surface)*threedeescale,surface_get_height(application_surface)*threedeescale);
 		log("this is dll calling")
@@ -132,7 +132,7 @@ function surfaces_init(){
 	}
 }	
 
-window_set_size((640*global.scale)+(global.surfaces.borderSize*global.scale*2),(360*global.scale)+(global.surfaces.borderSize*global.scale*2));
+//window_set_size((640*global.scale)+(global.surfaces.borderSize*global.scale*2),(360*global.scale)+(global.surfaces.borderSize*global.scale*2));
 
 
 

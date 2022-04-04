@@ -1,3 +1,4 @@
+global.count = 0;
 global.bullets = {};
 global.lasers = {};
 global.hitscans = {};

@@ -26,5 +26,6 @@ wiggle = 0;
 selecting = false;
 skipped = false;
 specialchars = 0;
+draw_set_font(ft_helveticaneue)
 
 bg = s_null;

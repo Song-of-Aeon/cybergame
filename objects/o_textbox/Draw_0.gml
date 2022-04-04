@@ -1,6 +1,5 @@
 if txtprocessed {
-	surface_set_target(global.surfaces.HUD);
-	draw_sprite(bg, 0, 0, 0);
+	//draw_sprite(bg, 0, 0, 0);
 	//draw_self();
 	//log(talker, talkindex, spriteposx, spriteposy);
 	for (i=0; i<array_length(talker); i++) {
@@ -13,7 +12,7 @@ if txtprocessed {
 	draw_set_halign(fa_left);
 	draw_text(x+width/20-width/2, y-20, name);
 	var otherfonts = draw_get_font();
-	set_font_style("talk");
+	//set_font_style("talk");
 	clr = c_white;
 	
 	var clrdur = 0;
@@ -34,7 +33,7 @@ if txtprocessed {
 		effchars = drawchars+specialchars;
 		//log(wiggle);
 	    draw_text_ext_transformed_colour(
-			x+width/20+xpos*(fontsize)-width/2,
+			x+width/20+xpos-width/2,
 			y+(fontsize)+lb*(fontsize*2)+sin((count+i*2)/(talkspeed*20))*wiggle,
 			string_hash_to_newline(string_char_at(msg[talkpos].text, i)),
 			0, 999, sizemult, sizemult, 0, clr, clr, clr, clr, 1
@@ -45,12 +44,11 @@ if txtprocessed {
 	        lb++;
 	        xpos = -1;
 	    }
-	    xpos += sizemult;
+	    xpos += string_width(string_char_at(msg[talkpos].text, i))+sizemult;
 	    //clrdur--;
 		
 	}
 	draw_set_font(otherfonts);
-	surface_reset_target();
 }
 
 //ds_map_add

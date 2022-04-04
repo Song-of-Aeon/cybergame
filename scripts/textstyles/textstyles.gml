@@ -1,12 +1,21 @@
-global.gw = 290;
-global.gh = 340;//uh oh
+global.gw = 426;
+global.gh = 240;
 
 
 global.textdefault = {
-	x: 320,
-	y: 250,
-	width: 420,
-	height: 80,
+	x: global.gw/4,
+	y: 7,
+	width: 200,
+	height: 70,
+	spriteposx: 210,
+	spriteposy: 190,
+}
+
+global.textthinking = {
+	x: global.gw/4,
+	y: 163,
+	width: 200,
+	height: 70,
 	spriteposx: 210,
 	spriteposy: 190,
 }

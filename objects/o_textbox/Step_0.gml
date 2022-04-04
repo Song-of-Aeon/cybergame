@@ -9,12 +9,10 @@ if !txtprocessed {
 	talklength = string_length(msg[talkpos].text)+1;
 	drawing = ""
 	drawchars = 0;
-	name = msg[talkpos].name;
 	msg[talkpos].event();
-	spritepos = msg[talkpos].spritepos
-	talker[spritepos] = global.textguy[?string_lower(name)];
-	talkindex[spritepos] = msg[talkpos].sprite;
-	if msg[talkpos].bg != "UNCHANGED" bg = msg[talkpos].bg;
+	if msg[talkpos].animation != noone {
+		o_whatever.girl = msg[talkpos].animation;
+	}
 }
 
 if wait {
@@ -53,10 +51,9 @@ if drawchars <= talklength {
 			drawchars = 0;
 			name = msg[talkpos].name;
 			msg[talkpos].event();
-			spritepos = msg[talkpos].spritepos
-			talker[spritepos] = global.textguy[?string_lower(name)];
-			talkindex[spritepos] = msg[talkpos].sprite;
-			if msg[talkpos].bg != "UNCHANGED" bg = msg[talkpos].bg;
+			if msg[talkpos].animation != noone {
+				o_whatever.girl = msg[talkpos].animation;
+			}
         } else {
 			endevent();
             instance_destroy();
