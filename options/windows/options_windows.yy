@@ -3,7 +3,7 @@
     "BreadManFrameSkip": {"option_windows_sleep_margin":"100",},
   },
   "option_windows_display_name": "DATEGAME",
-  "option_windows_executable_name": "Kaseigai.exe",
+  "option_windows_executable_name": "dategame.exe",
   "option_windows_version": "1.3.3.7",
   "option_windows_company_info": "you know",
   "option_windows_product_info": "",

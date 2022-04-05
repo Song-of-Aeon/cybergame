@@ -37,7 +37,7 @@ if txtprocessed {
 			x+width/20+xpos-width/2,
 			y+(fontsize)+lb*(fontsize*2)+sin((count+i*2)/(talkspeed*20))*wiggle,
 			string_hash_to_newline(string_char_at(msg[talkpos].text, i)),
-			0, 999, sizemult, sizemult, 0, clr, clr, clr, clr, 1
+			0, 580, sizemult, sizemult, 0, clr, clr, clr, clr, 1
 		);
 		//font_get_italic()
 		
